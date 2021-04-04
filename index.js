@@ -95,3 +95,23 @@ while (loopCounter < degFar.length) {
 }
 
 console.log("Cent ==>", degCent);
+
+// for...continue
+
+let degCen = [];
+let degFare = [33, "Hello", 97];
+let loopCounter2;
+
+for (loopCounter2 = 0; loopCounter2 <= degFare.length; loopCounter2++) {
+  if (isNaN(degFare[loopCounter2])) {
+    console.log(
+      `the '${degFare[loopCounter2]}' with index of ${loopCounter2} is invalid`
+    );
+    continue;
+    //continue yani in ye khat ro bikhial sho va boro soraghe badi ama agar break bod kolan baghie ro bikhial mishod
+  }
+  let m = 5 / 9 + (degFare[loopCounter2] - 32);
+  degCen[loopCounter2] = m.toFixed(2);
+}
+
+console.log("Cent ==>", degCen);
