@@ -81,3 +81,17 @@ for (const key in studentArray) {
 for (let i = 0; i < studentArray.length; i++) {
   console.log("name : ", studentArray[i]);
 }
+
+// while
+
+let degCent = [];
+let degFar = [23, 45, 97];
+let loopCounter = 0;
+
+while (loopCounter < degFar.length) {
+  let n = 5 / 9 + (degFar[loopCounter] - 32);
+  degCent[loopCounter] = n.toFixed(2);
+  loopCounter++;
+}
+
+console.log("Cent ==>", degCent);
