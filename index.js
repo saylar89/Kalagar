@@ -69,3 +69,15 @@ switch (z) {
     console.log("shit");
     break;
 }
+
+/* if...in */
+
+let studentArray = ["aslan", "ali", "saied", "shahin"];
+
+for (const key in studentArray) {
+  console.log("The student name :", studentArray[key]);
+}
+
+for (let i = 0; i < studentArray.length; i++) {
+  console.log("name : ", studentArray[i]);
+}
