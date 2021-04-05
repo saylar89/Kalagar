@@ -136,3 +136,30 @@ let human = {
 console.log(human[""]);
 
 human.isWriting();
+
+//creat object
+
+let anotherPerson = new Object();
+console.log(anotherPerson);
+
+let date = new Date();
+console.log(date);
+
+let thePerson = Object.create(Object.prototype);
+console.log(thePerson);
+
+let theBoy = Object.create({
+  firstName: "Ali",
+  "": "WoooW",
+  lastName: "Zia",
+  age: 34,
+  isAlive: true,
+  book: {
+    title: "Rich Dad",
+    pages: 2000,
+  },
+  isWriting: function () {
+    console.log("Hello stranger");
+  },
+});
+console.log(theBoy);
