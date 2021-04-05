@@ -231,3 +231,35 @@ console.log(Object.keys(theGirl));
 
 console.log(Object.getOwnPropertyNames(theGirl));
 console.log(Object.getOwnPropertyNames(human));
+
+// Getter & Setter
+
+let people = {
+  firstName: "Nima",
+  "": "WoooW",
+  lastName: "Zand",
+  age: 60,
+  isAlive: false,
+  book: {
+    title: "Poor Dad",
+    pages: 4000,
+    language: "",
+  },
+  isWriting: function () {
+    console.log("Hello stranger");
+  },
+
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+
+  set lang(value) {
+    this.book.language = value.toUpperCase();
+  },
+};
+
+console.log(people.fullName);
+
+people.lang = "arabic";
+people.lang = "english";
+console.log(people.book.language);
