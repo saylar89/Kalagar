@@ -163,3 +163,27 @@ let theBoy = Object.create({
   },
 });
 console.log(theBoy);
+
+//inheritance
+
+let theGirl = Object.create(human);
+theGirl.middleName = "hossein";
+console.log(theGirl);
+
+//delete Object
+console.log(human.age);
+delete human.age;
+console.log(human.age);
+
+//testing object (4 ways for testing)
+
+console.log("lastName" in human);
+
+console.log(human.hasOwnProperty("age"));
+console.log(theGirl.hasOwnProperty("middleName"));
+console.log(theGirl.hasOwnProperty("lastName"));
+
+console.log(human.propertyIsEnumerable("lastName"));
+
+console.log(human.age === undefined);
+console.log(human.age !== undefined);
