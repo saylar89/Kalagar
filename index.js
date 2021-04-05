@@ -187,3 +187,47 @@ console.log(human.propertyIsEnumerable("lastName"));
 
 console.log(human.age === undefined);
 console.log(human.age !== undefined);
+
+// Enumerable Object
+//1-Print all properties in an object that are enumerable - own and inheritance both show
+
+for (p in human) {
+  console.log(p);
+}
+
+for (p in theGirl) {
+  console.log(p);
+}
+
+//2 if we want just own
+for (p in theGirl) {
+  if (theGirl.hasOwnProperty(p)) {
+    console.log(p);
+  }
+}
+
+//3 if we want just inheritance
+for (p in theGirl) {
+  if (!theGirl.hasOwnProperty(p)) {
+    console.log(p);
+  }
+}
+
+//4 print properties with specific type
+for (p in human) {
+  if (typeof human[p] === "function") {
+    console.log(p);
+  }
+}
+
+for (p in human) {
+  if (typeof human[p] !== "function") {
+    console.log(p);
+  }
+}
+
+//5 print properties in an array except inheritance
+console.log(Object.keys(theGirl));
+
+console.log(Object.getOwnPropertyNames(theGirl));
+console.log(Object.getOwnPropertyNames(human));
