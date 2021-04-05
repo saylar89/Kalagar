@@ -115,3 +115,24 @@ for (loopCounter2 = 0; loopCounter2 <= degFare.length; loopCounter2++) {
 }
 
 console.log("Cent ==>", degCen);
+
+// Object
+
+let human = {
+  firstName: "Ali",
+  "": "WoooW",
+  lastName: "Zia",
+  age: 34,
+  isAlive: true,
+  book: {
+    title: "Rich Dad",
+    pages: 2000,
+  },
+  isWriting: function () {
+    console.log("Hello stranger");
+  },
+};
+
+console.log(human[""]);
+
+human.isWriting();
