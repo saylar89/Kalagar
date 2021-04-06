@@ -17,7 +17,14 @@ let e = d.splice(1, 2);
 console.log(d); //return [1,4,5,6,7,8]
 console.log(e); //return [2,3]
 
-// indexOf
-let f = [1, 2, 3, 4, 5, 6, 3, 4, 3, 3];
+// indexOf() & lastIndexOf()
+let f = [1, 2, 3, 4, 5, 6, 1, 4, 3, 3];
 console.log(f.indexOf(3)); //return 2
+console.log(f.indexOf(3, 4)); //return 6
 console.log(f.lastIndexOf(3)); //return 9
+
+//includes()
+let g = [false, 1, "mansour", "nader"];
+console.log(g.includes("mansour")); //return true
+console.log(g.includes("reza")); //return false
+console.log(g.includes(true)); //return false
