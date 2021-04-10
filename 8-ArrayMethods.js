@@ -20,7 +20,7 @@ console.log(e); //return [2,3]
 // indexOf() & lastIndexOf()
 let f = [1, 2, 3, 4, 5, 6, 1, 4, 3, 3];
 console.log(f.indexOf(3)); //return 2
-console.log(f.indexOf(3, 4)); //return 6
+console.log(f.indexOf(3, 4)); //return 8
 console.log(f.lastIndexOf(3)); //return 9
 
 //includes()

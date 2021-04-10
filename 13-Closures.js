@@ -1,4 +1,4 @@
-//we want to access a local variable inside a finction
+//we want to access a local variable inside a function
 
 let scope = "global";
 

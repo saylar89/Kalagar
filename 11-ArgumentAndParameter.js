@@ -33,4 +33,4 @@ function logFullName4(a, b, ...c) {
     console.log(x);
   }
 }
-logFullName4("sara", "aram", 1, 2, 3, 4, 5, 6);
+logFullName4("sara", "aram", 1, 2, 3, 4, 5, 6); //return 0,1,2,3,4,5
