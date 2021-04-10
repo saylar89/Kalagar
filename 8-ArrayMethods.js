@@ -16,6 +16,8 @@ let d = [1, 2, 3, 4, 5, 6, 7, 8];
 let e = d.splice(1, 2);
 console.log(d); //return [1,4,5,6,7,8]
 console.log(e); //return [2,3]
+d.splice(2, 3);
+console.log(d); //return [1,4,8]
 
 // indexOf() & lastIndexOf()
 let f = [1, 2, 3, 4, 5, 6, 1, 4, 3, 3];
